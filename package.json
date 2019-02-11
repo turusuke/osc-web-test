@@ -1,0 +1,22 @@
+{
+  "name": "osc-web-test",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "osc-js": "^2.0.2"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.11.0",
+    "prettier": "^1.16.4",
+    "typescript": "^3.3.3"
+  },
+  "scripts": {
+    "dev:server": "parcel watch src/index.ts -d dist --target node",
+    "dev:client": "parcel serve src/index.html -d dist/client --open",
+    "build:server": "parcel build src/index.ts -d dist --target node",
+    "build:client": "parcel build src/index.html -d dist/client"
+  },
+  "author": "turusuke <mail@turusuke.com>",
+  "license": "MIT"
+}
